@@ -17,7 +17,7 @@ public class Controller {
     @GetMapping("/greeting")
     public String greeting()
     {
-        return "Hello, welcome to my site !!";
+        return "Hello, welcome to my site";
     }
 
     @GetMapping("/getAll")
