@@ -11,8 +11,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/gate1")
 public class Controller {
-    @Autowired
+
     ImpService impService;
+    @Autowired
+    public Controller(ImpService impService) {
+        this.impService = impService;
+    }
 
     @GetMapping("/greeting")
     public String greeting()
